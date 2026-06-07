@@ -1,0 +1,188 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Mini Clubman. Cream. New</title>
+    <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+    <main class="detail-page">
+        <a class="back-link" href="../index.html">Back to all cars</a>
+
+        <article class="detail-layout">
+            <section class="detail-media">
+                <button class="feature-image-button" id="open-photo-viewer" type="button" aria-label="Open Mini Clubman. Cream. New photo full screen">
+                    <img class="feature-image" id="feature-image" src="../images/J10.jpeg" alt="Mini Clubman. Cream. New">
+                    <span>View full screen</span>
+                </button>
+                <div class="gallery">
+                    
+                    <button class="thumbnail-button is-active" type="button" data-image="../images/J10.jpeg" aria-label="Show Mini Clubman. Cream. New image">
+                        <img src="../images/J10.jpeg" alt="Mini Clubman. Cream. New">
+                    </button>
+        
+                </div>
+            </section>
+
+            <section class="detail-panel">
+                <p class="eyebrow">J10</p>
+                <h1>Mini Clubman. Cream. New</h1>
+                <ul class="detail-list">
+                    
+        <li>
+            <span>Owner</span>
+            <strong>Joint</strong>
+        </li>
+        
+
+        <li>
+            <span>Built</span>
+            <strong>2007</strong>
+        </li>
+        
+
+        <li>
+            <span>Colour</span>
+            <strong>Cream &amp; Black</strong>
+        </li>
+        
+
+        <li>
+            <span>Fuel</span>
+            <strong>Petrol</strong>
+        </li>
+        
+
+        <li>
+            <span>Registration</span>
+            <strong>AT57 NDG</strong>
+        </li>
+        
+
+        <li>
+            <span>Purchase Date</span>
+            <strong>2007</strong>
+        </li>
+        
+
+        <li>
+            <span>Condition</span>
+            <strong>New</strong>
+        </li>
+        
+
+        <li>
+            <span>Sold Date</span>
+            <strong>Unknown</strong>
+        </li>
+        
+                </ul>
+                <div class="notes">
+                    <h2>Notes</h2>
+                    <p>Suicide door included!</p>
+                </div>
+            </section>
+        </article>
+        
+        <section class="further-details">
+            <div class="section-heading">
+                <h2>Further details</h2>
+                <span>Model information</span>
+            </div>
+            <p class="resource-intro">
+                Explore background information for Mini Clubman. Cream. New.
+            </p>
+            <div class="resource-grid">
+                <a class="detail-resource" href="https://en.wikipedia.org/w/index.php?search=Mini%20Clubman.%20Cream.%20New%20history" target="_blank" rel="noopener">
+                    <strong>Read model history</strong>
+                    <span>Find background information about this exact make and model on Wikipedia.</span>
+                </a>
+            </div>
+        </section>
+    
+        
+        <nav class="car-navigation" aria-label="Browse cars">
+            
+            <a class="car-navigation-link previous-car" href="J9.html">
+                <span>Previous car</span>
+                <strong>Mini Cooper S 3-door</strong>
+            </a>
+        
+            <a class="car-navigation-home" href="../index.html">All cars</a>
+            
+            <a class="car-navigation-link next-car" href="J11.html">
+                <span>Next car</span>
+                <strong>VW golf estate Mk ?</strong>
+            </a>
+        
+        </nav>
+    
+    </main>
+    <dialog class="photo-viewer" id="photo-viewer">
+        <button class="viewer-close" type="button" aria-label="Close full-screen photo">Close</button>
+        <button class="viewer-navigation viewer-previous" type="button" aria-label="Show previous photo">Previous</button>
+        <figure>
+            <img id="viewer-image" src="../images/J10.jpeg" alt="Mini Clubman. Cream. New">
+            <figcaption id="viewer-caption">Mini Clubman. Cream. New</figcaption>
+        </figure>
+        <button class="viewer-navigation viewer-next" type="button" aria-label="Show next photo">Next</button>
+    </dialog>
+    <script>
+        const featureImage = document.querySelector("#feature-image");
+        const thumbnailButtons = document.querySelectorAll(".thumbnail-button");
+        const copyRegistrationButton = document.querySelector(".copy-registration");
+        const openPhotoViewerButton = document.querySelector("#open-photo-viewer");
+        const photoViewer = document.querySelector("#photo-viewer");
+        const viewerImage = document.querySelector("#viewer-image");
+        const viewerPrevious = document.querySelector(".viewer-previous");
+        const viewerNext = document.querySelector(".viewer-next");
+        const viewerClose = document.querySelector(".viewer-close");
+        const photoSources = Array.from(thumbnailButtons).map((button) => button.dataset.image);
+        let currentPhotoIndex = 0;
+
+        thumbnailButtons.forEach((button) => {
+            button.addEventListener("click", () => {
+                featureImage.src = button.dataset.image;
+                currentPhotoIndex = photoSources.indexOf(button.dataset.image);
+                thumbnailButtons.forEach((item) => item.classList.remove("is-active"));
+                button.classList.add("is-active");
+            });
+        });
+
+        function showViewerPhoto(index) {
+            currentPhotoIndex = (index + photoSources.length) % photoSources.length;
+            viewerImage.src = photoSources[currentPhotoIndex];
+        }
+
+        openPhotoViewerButton.addEventListener("click", () => {
+            currentPhotoIndex = photoSources.indexOf(featureImage.getAttribute("src"));
+            showViewerPhoto(currentPhotoIndex);
+            photoViewer.showModal();
+        });
+
+        viewerPrevious.addEventListener("click", () => showViewerPhoto(currentPhotoIndex - 1));
+        viewerNext.addEventListener("click", () => showViewerPhoto(currentPhotoIndex + 1));
+        viewerClose.addEventListener("click", () => photoViewer.close());
+
+        photoViewer.addEventListener("click", (event) => {
+            if (event.target === photoViewer) photoViewer.close();
+        });
+
+        photoViewer.addEventListener("keydown", (event) => {
+            if (event.key === "ArrowLeft") showViewerPhoto(currentPhotoIndex - 1);
+            if (event.key === "ArrowRight") showViewerPhoto(currentPhotoIndex + 1);
+        });
+
+        if (copyRegistrationButton) {
+            copyRegistrationButton.addEventListener("click", async () => {
+                await navigator.clipboard.writeText(copyRegistrationButton.dataset.registration);
+                copyRegistrationButton.textContent = "Copied";
+                setTimeout(() => {
+                    copyRegistrationButton.textContent = "Copy";
+                }, 1600);
+            });
+        }
+    </script>
+</body>
+</html>

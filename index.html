@@ -1,0 +1,1339 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Car History Family Tree</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="hero">
+        <div>
+            <p class="eyebrow">Steve and Christine's garage archive</p>
+            <h1>Car History Family Tree</h1>
+            <p class="intro">A personal collection of every car owned by Steve, Christine, or both together.</p>
+        </div>
+        <div class="stats">
+            <div><strong>27</strong><span>Total cars</span></div>
+            <div><strong>17</strong><span>Joint cars</span></div>
+            <div><strong>2</strong><span>Electric cars</span></div>
+        </div>
+    </header>
+
+    <main>
+        <section class="garage-tools" aria-label="Find cars">
+            <div class="tool-field search-field">
+                <label for="car-search">Search</label>
+                <input id="car-search" type="search" placeholder="Make, model, colour, reg or note">
+            </div>
+            <div class="tool-field">
+                <label for="owner-filter">Owner</label>
+                <select id="owner-filter">
+                    <option value="">All owners</option>
+                    <option value="Steve">Steve</option>
+                    <option value="Chris">Christine</option>
+                    <option value="Joint">Joint</option>
+                </select>
+            </div>
+            <div class="tool-field">
+                <label for="fuel-filter">Fuel</label>
+                <select id="fuel-filter">
+                    <option value="">All fuels</option>
+                    <option value="Diesel">Diesel</option>
+<option value="Electric">Electric</option>
+<option value="Petrol">Petrol</option>
+<option value="Petrol Hybrid">Petrol Hybrid</option>
+                </select>
+            </div>
+            <output id="result-count">27 cars shown</output>
+        </section>
+
+        <section class="timeline" aria-label="Car timeline">
+            <div class="section-heading">
+                <div>
+                    <h2>Our motoring road</h2>
+                    <div class="timeline-legend" aria-label="Owner colours">
+                        <span class="owner-steve">Steve</span>
+                        <span class="owner-chris">Christine</span>
+                        <span class="owner-joint">Joint</span>
+                    </div>
+                </div>
+                <label class="timeline-order">
+                    <span>Order</span>
+                    <select id="timeline-order">
+                        <option value="earliest">Earliest to latest</option>
+                        <option value="latest">Latest to earliest</option>
+                    </select>
+                </label>
+            </div>
+            <div class="timeline-strip">
+                
+            <a class="timeline-item owner-steve" href="cars/S1.html">
+                <span class="timeline-marker">S1</span>
+                <span class="timeline-year">1981</span>
+                <strong>Ford Escort Mk1</strong>
+                <small>Steve</small>
+            </a>
+        
+
+            <a class="timeline-item owner-chris" href="cars/C1.html">
+                <span class="timeline-marker">C1</span>
+                <span class="timeline-year">1982</span>
+                <strong>Mini 1000</strong>
+                <small>Christine</small>
+            </a>
+        
+
+            <a class="timeline-item owner-steve" href="cars/S2.html">
+                <span class="timeline-marker">S2</span>
+                <span class="timeline-year">1983</span>
+                <strong>Ford Escort Mk1</strong>
+                <small>Steve</small>
+            </a>
+        
+
+            <a class="timeline-item owner-chris" href="cars/C2.html">
+                <span class="timeline-marker">C2</span>
+                <span class="timeline-year">1984</span>
+                <strong>Fiat Panda</strong>
+                <small>Christine</small>
+            </a>
+        
+
+            <a class="timeline-item owner-steve" href="cars/S3.html">
+                <span class="timeline-marker">S3</span>
+                <span class="timeline-year">1985</span>
+                <strong>VW Golf Mk1</strong>
+                <small>Steve</small>
+            </a>
+        
+
+            <a class="timeline-item owner-joint" href="cars/J1.html">
+                <span class="timeline-marker">J1</span>
+                <span class="timeline-year">1987</span>
+                <strong>Ford Orion 1.6 Ghia i</strong>
+                <small>Joint</small>
+            </a>
+        
+
+            <a class="timeline-item owner-joint" href="cars/J2.html">
+                <span class="timeline-marker">J2</span>
+                <span class="timeline-year">1990</span>
+                <strong>VW Golf 1.8GL Mk 2</strong>
+                <small>Joint</small>
+            </a>
+        
+
+            <a class="timeline-item owner-joint" href="cars/J3.html">
+                <span class="timeline-marker">J3</span>
+                <span class="timeline-year">1992</span>
+                <strong>Ford Escort Mk 3 1.3L</strong>
+                <small>Joint</small>
+            </a>
+        
+
+            <a class="timeline-item owner-joint" href="cars/J4.html">
+                <span class="timeline-marker">J4</span>
+                <span class="timeline-year">1991</span>
+                <strong>Opel Cadet GLS</strong>
+                <small>Joint</small>
+            </a>
+        
+
+            <a class="timeline-item owner-joint" href="cars/J5.html">
+                <span class="timeline-marker">J5</span>
+                <span class="timeline-year">1992</span>
+                <strong>Triumph 1300 FWD</strong>
+                <small>Joint</small>
+            </a>
+        
+
+            <a class="timeline-item owner-joint" href="cars/J6.html">
+                <span class="timeline-marker">J6</span>
+                <span class="timeline-year">1992</span>
+                <strong>Citroen ZX Aura TDi</strong>
+                <small>Joint</small>
+            </a>
+        
+
+            <a class="timeline-item owner-joint" href="cars/J7.html">
+                <span class="timeline-marker">J7</span>
+                <span class="timeline-year">1996</span>
+                <strong>Daihatsu Sportrack Convertable</strong>
+                <small>Joint</small>
+            </a>
+        
+
+            <a class="timeline-item owner-joint" href="cars/J8.html">
+                <span class="timeline-marker">J8</span>
+                <span class="timeline-year">1994</span>
+                <strong>Citroen ZX Volcane 1.3-door</strong>
+                <small>Joint</small>
+            </a>
+        
+
+            <a class="timeline-item owner-steve" href="cars/S4.html">
+                <span class="timeline-marker">S4</span>
+                <span class="timeline-year">1998</span>
+                <strong>Mazda MX3</strong>
+                <small>Steve</small>
+            </a>
+        
+
+            <a class="timeline-item owner-chris" href="cars/C4.html">
+                <span class="timeline-marker">C4</span>
+                <span class="timeline-year">1999</span>
+                <strong>Citroen ZX estate</strong>
+                <small>Christine</small>
+            </a>
+        
+
+            <a class="timeline-item owner-steve" href="cars/S5.html">
+                <span class="timeline-marker">S5</span>
+                <span class="timeline-year">2009</span>
+                <strong>VW Golf Mk 4</strong>
+                <small>Steve</small>
+            </a>
+        
+
+            <a class="timeline-item owner-joint" href="cars/J9.html">
+                <span class="timeline-marker">J9</span>
+                <span class="timeline-year">2002</span>
+                <strong>Mini Cooper S 3-door</strong>
+                <small>Joint</small>
+            </a>
+        
+
+            <a class="timeline-item owner-joint" href="cars/J10.html">
+                <span class="timeline-marker">J10</span>
+                <span class="timeline-year">2007</span>
+                <strong>Mini Clubman. Cream. New</strong>
+                <small>Joint</small>
+            </a>
+        
+
+            <a class="timeline-item owner-joint" href="cars/J11.html">
+                <span class="timeline-marker">J11</span>
+                <span class="timeline-year">2012</span>
+                <strong>VW golf estate Mk ?</strong>
+                <small>Joint</small>
+            </a>
+        
+
+            <a class="timeline-item owner-joint" href="cars/J12.html">
+                <span class="timeline-marker">J12</span>
+                <span class="timeline-year">2017</span>
+                <strong>VW Golf estate Mk ? Alltrack</strong>
+                <small>Joint</small>
+            </a>
+        
+
+            <a class="timeline-item owner-joint" href="cars/J13.html">
+                <span class="timeline-marker">J13</span>
+                <span class="timeline-year">2020</span>
+                <strong>VW Touran Mk ?</strong>
+                <small>Joint</small>
+            </a>
+        
+
+            <a class="timeline-item owner-steve" href="cars/S6.html">
+                <span class="timeline-marker">S6</span>
+                <span class="timeline-year">2018</span>
+                <strong>VW T-roc</strong>
+                <small>Steve</small>
+            </a>
+        
+
+            <a class="timeline-item owner-steve" href="cars/S7.html">
+                <span class="timeline-marker">S7</span>
+                <span class="timeline-year">2022</span>
+                <strong>Honda Jazz. vvti?</strong>
+                <small>Steve</small>
+            </a>
+        
+
+            <a class="timeline-item owner-joint" href="cars/J14.html">
+                <span class="timeline-marker">J14</span>
+                <span class="timeline-year">2023</span>
+                <strong>Volvo V60 T6 estate hybrid</strong>
+                <small>Joint</small>
+            </a>
+        
+
+            <a class="timeline-item owner-joint" href="cars/J15.html">
+                <span class="timeline-marker">J15</span>
+                <span class="timeline-year">2023</span>
+                <strong>Toyota RAV4 (hybrid). Black. New</strong>
+                <small>Joint</small>
+            </a>
+        
+
+            <a class="timeline-item owner-joint" href="cars/J16.html">
+                <span class="timeline-marker">J16</span>
+                <span class="timeline-year">2024</span>
+                <strong>Renault Zoe ZE50</strong>
+                <small>Joint</small>
+            </a>
+        
+
+            <a class="timeline-item owner-joint" href="cars/J17.html">
+                <span class="timeline-marker">J17</span>
+                <span class="timeline-year">Year unknown</span>
+                <strong>Renault 4 Techno Iconic</strong>
+                <small>Joint</small>
+            </a>
+        
+            </div>
+        </section>
+
+        
+        <section class="journey-map" aria-labelledby="journey-title">
+            <div class="section-heading">
+                <div>
+                    <h2 id="journey-title">Ownership journey</h2>
+                    <p>Follow each lane and discover the milestones along the way.</p>
+                </div>
+                <span>Hover or tap a stop</span>
+            </div>
+            <div class="journey-scroll">
+                <div class="journey-grid" style="--journey-columns:27;">
+                    <span class="journey-lane-label owner-steve" style="grid-row:2;">Steve</span>
+<span class="journey-lane-label owner-chris" style="grid-row:3;">Christine</span>
+<span class="journey-lane-label owner-joint" style="grid-row:4;">Joint</span>
+                    <span class="journey-year" style="grid-column:2;">1981</span><span class="journey-year" style="grid-column:3;">1982</span><span class="journey-year" style="grid-column:4;">1983</span><span class="journey-year" style="grid-column:5;">1984</span><span class="journey-year" style="grid-column:6;">1985</span><span class="journey-year" style="grid-column:7;">1987</span><span class="journey-year" style="grid-column:8;">1990</span><span class="journey-year" style="grid-column:9;">1992</span><span class="journey-year" style="grid-column:10;">1991</span><span class="journey-year" style="grid-column:11;">1992</span><span class="journey-year" style="grid-column:13;">1996</span><span class="journey-year" style="grid-column:14;">1994</span><span class="journey-year" style="grid-column:15;">1998</span><span class="journey-year" style="grid-column:16;">1999</span><span class="journey-year" style="grid-column:17;">2009</span><span class="journey-year" style="grid-column:18;">2002</span><span class="journey-year" style="grid-column:19;">2007</span><span class="journey-year" style="grid-column:20;">2012</span><span class="journey-year" style="grid-column:21;">2017</span><span class="journey-year" style="grid-column:22;">2020</span><span class="journey-year" style="grid-column:23;">2018</span><span class="journey-year" style="grid-column:24;">2022</span><span class="journey-year" style="grid-column:25;">2023</span><span class="journey-year" style="grid-column:27;">2024</span><span class="journey-year" style="grid-column:28;">Year unknown</span>
+                    
+            <a class="journey-stop owner-steve is-milestone"
+               href="cars/S1.html"
+               style="grid-column:2; grid-row:2;">
+                <span class="journey-dot">S1</span>
+                <span class="journey-preview">
+                    <img src="images/S1.jpg" alt="">
+                    <strong>Ford Escort Mk1</strong>
+                    <small>1981</small>
+                    <span class="journey-milestone-label">First Steve car</span>
+                </span>
+            </a>
+            
+            <a class="journey-stop owner-chris is-milestone"
+               href="cars/C1.html"
+               style="grid-column:3; grid-row:3;">
+                <span class="journey-dot">C1</span>
+                <span class="journey-preview">
+                    <img src="images/C1.jpg" alt="">
+                    <strong>Mini 1000</strong>
+                    <small>1982</small>
+                    <span class="journey-milestone-label">First Christine car</span>
+                </span>
+            </a>
+            
+            <a class="journey-stop owner-steve"
+               href="cars/S2.html"
+               style="grid-column:4; grid-row:2;">
+                <span class="journey-dot">S2</span>
+                <span class="journey-preview">
+                    <img src="images/S2.jpeg" alt="">
+                    <strong>Ford Escort Mk1</strong>
+                    <small>1983</small>
+                    
+                </span>
+            </a>
+            
+            <a class="journey-stop owner-chris"
+               href="cars/C2.html"
+               style="grid-column:5; grid-row:3;">
+                <span class="journey-dot">C2</span>
+                <span class="journey-preview">
+                    <img src="images/C2.jpg" alt="">
+                    <strong>Fiat Panda</strong>
+                    <small>1984</small>
+                    
+                </span>
+            </a>
+            
+            <a class="journey-stop owner-steve"
+               href="cars/S3.html"
+               style="grid-column:6; grid-row:2;">
+                <span class="journey-dot">S3</span>
+                <span class="journey-preview">
+                    <img src="images/S3.jpg" alt="">
+                    <strong>VW Golf Mk1</strong>
+                    <small>1985</small>
+                    
+                </span>
+            </a>
+            
+            <a class="journey-stop owner-joint is-milestone"
+               href="cars/J1.html"
+               style="grid-column:7; grid-row:4;">
+                <span class="journey-dot">J1</span>
+                <span class="journey-preview">
+                    <img src="images/J1.JPG" alt="">
+                    <strong>Ford Orion 1.6 Ghia i</strong>
+                    <small>1987</small>
+                    <span class="journey-milestone-label">First Joint car</span>
+                </span>
+            </a>
+            
+            <a class="journey-stop owner-joint"
+               href="cars/J2.html"
+               style="grid-column:8; grid-row:4;">
+                <span class="journey-dot">J2</span>
+                <span class="journey-preview">
+                    <img src="images/J2.jpg" alt="">
+                    <strong>VW Golf 1.8GL Mk 2</strong>
+                    <small>1990</small>
+                    
+                </span>
+            </a>
+            
+            <a class="journey-stop owner-joint"
+               href="cars/J3.html"
+               style="grid-column:9; grid-row:4;">
+                <span class="journey-dot">J3</span>
+                <span class="journey-preview">
+                    <img src="images/J3.jpeg" alt="">
+                    <strong>Ford Escort Mk 3 1.3L</strong>
+                    <small>1992</small>
+                    
+                </span>
+            </a>
+            
+            <a class="journey-stop owner-joint"
+               href="cars/J4.html"
+               style="grid-column:10; grid-row:4;">
+                <span class="journey-dot">J4</span>
+                <span class="journey-preview">
+                    <img src="images/J4.jpeg" alt="">
+                    <strong>Opel Cadet GLS</strong>
+                    <small>1991</small>
+                    
+                </span>
+            </a>
+            
+            <a class="journey-stop owner-joint"
+               href="cars/J5.html"
+               style="grid-column:11; grid-row:4;">
+                <span class="journey-dot">J5</span>
+                <span class="journey-preview">
+                    <img src="images/J5.jpeg" alt="">
+                    <strong>Triumph 1300 FWD</strong>
+                    <small>1992</small>
+                    
+                </span>
+            </a>
+            
+            <a class="journey-stop owner-joint is-milestone"
+               href="cars/J6.html"
+               style="grid-column:12; grid-row:4;">
+                <span class="journey-dot">J6</span>
+                <span class="journey-preview">
+                    <img src="images/J6.jpeg" alt="">
+                    <strong>Citroen ZX Aura TDi</strong>
+                    <small>1992</small>
+                    <span class="journey-milestone-label">First new car</span>
+                </span>
+            </a>
+            
+            <a class="journey-stop owner-joint"
+               href="cars/J7.html"
+               style="grid-column:13; grid-row:4;">
+                <span class="journey-dot">J7</span>
+                <span class="journey-preview">
+                    <img src="images/J7.JPG" alt="">
+                    <strong>Daihatsu Sportrack Convertable</strong>
+                    <small>1996</small>
+                    
+                </span>
+            </a>
+            
+            <a class="journey-stop owner-joint"
+               href="cars/J8.html"
+               style="grid-column:14; grid-row:4;">
+                <span class="journey-dot">J8</span>
+                <span class="journey-preview">
+                    <img src="images/J8.jpg" alt="">
+                    <strong>Citroen ZX Volcane 1.3-door</strong>
+                    <small>1994</small>
+                    
+                </span>
+            </a>
+            
+            <a class="journey-stop owner-steve"
+               href="cars/S4.html"
+               style="grid-column:15; grid-row:2;">
+                <span class="journey-dot">S4</span>
+                <span class="journey-preview">
+                    <img src="images/S4.jpeg" alt="">
+                    <strong>Mazda MX3</strong>
+                    <small>1998</small>
+                    
+                </span>
+            </a>
+            
+            <a class="journey-stop owner-chris"
+               href="cars/C4.html"
+               style="grid-column:16; grid-row:3;">
+                <span class="journey-dot">C4</span>
+                <span class="journey-preview">
+                    <img src="images/C4.png" alt="">
+                    <strong>Citroen ZX estate</strong>
+                    <small>1999</small>
+                    
+                </span>
+            </a>
+            
+            <a class="journey-stop owner-steve"
+               href="cars/S5.html"
+               style="grid-column:17; grid-row:2;">
+                <span class="journey-dot">S5</span>
+                <span class="journey-preview">
+                    <img src="images/placeholder.jpeg" alt="">
+                    <strong>VW Golf Mk 4</strong>
+                    <small>2009</small>
+                    
+                </span>
+            </a>
+            
+            <a class="journey-stop owner-joint"
+               href="cars/J9.html"
+               style="grid-column:18; grid-row:4;">
+                <span class="journey-dot">J9</span>
+                <span class="journey-preview">
+                    <img src="images/J9.jpeg" alt="">
+                    <strong>Mini Cooper S 3-door</strong>
+                    <small>2002</small>
+                    
+                </span>
+            </a>
+            
+            <a class="journey-stop owner-joint"
+               href="cars/J10.html"
+               style="grid-column:19; grid-row:4;">
+                <span class="journey-dot">J10</span>
+                <span class="journey-preview">
+                    <img src="images/J10.jpeg" alt="">
+                    <strong>Mini Clubman. Cream. New</strong>
+                    <small>2007</small>
+                    
+                </span>
+            </a>
+            
+            <a class="journey-stop owner-joint"
+               href="cars/J11.html"
+               style="grid-column:20; grid-row:4;">
+                <span class="journey-dot">J11</span>
+                <span class="journey-preview">
+                    <img src="images/placeholder.jpeg" alt="">
+                    <strong>VW golf estate Mk ?</strong>
+                    <small>2012</small>
+                    
+                </span>
+            </a>
+            
+            <a class="journey-stop owner-joint"
+               href="cars/J12.html"
+               style="grid-column:21; grid-row:4;">
+                <span class="journey-dot">J12</span>
+                <span class="journey-preview">
+                    <img src="images/J12.jpeg" alt="">
+                    <strong>VW Golf estate Mk ? Alltrack</strong>
+                    <small>2017</small>
+                    
+                </span>
+            </a>
+            
+            <a class="journey-stop owner-joint"
+               href="cars/J13.html"
+               style="grid-column:22; grid-row:4;">
+                <span class="journey-dot">J13</span>
+                <span class="journey-preview">
+                    <img src="images/J13.jpeg" alt="">
+                    <strong>VW Touran Mk ?</strong>
+                    <small>2020</small>
+                    
+                </span>
+            </a>
+            
+            <a class="journey-stop owner-steve"
+               href="cars/S6.html"
+               style="grid-column:23; grid-row:2;">
+                <span class="journey-dot">S6</span>
+                <span class="journey-preview">
+                    <img src="images/S6.jpeg" alt="">
+                    <strong>VW T-roc</strong>
+                    <small>2018</small>
+                    
+                </span>
+            </a>
+            
+            <a class="journey-stop owner-steve"
+               href="cars/S7.html"
+               style="grid-column:24; grid-row:2;">
+                <span class="journey-dot">S7</span>
+                <span class="journey-preview">
+                    <img src="images/S7.jpeg" alt="">
+                    <strong>Honda Jazz. vvti?</strong>
+                    <small>2022</small>
+                    
+                </span>
+            </a>
+            
+            <a class="journey-stop owner-joint is-milestone"
+               href="cars/J14.html"
+               style="grid-column:25; grid-row:4;">
+                <span class="journey-dot">J14</span>
+                <span class="journey-preview">
+                    <img src="images/J14.jpeg" alt="">
+                    <strong>Volvo V60 T6 estate hybrid</strong>
+                    <small>2023</small>
+                    <span class="journey-milestone-label">First hybrid</span>
+                </span>
+            </a>
+            
+            <a class="journey-stop owner-joint"
+               href="cars/J15.html"
+               style="grid-column:26; grid-row:4;">
+                <span class="journey-dot">J15</span>
+                <span class="journey-preview">
+                    <img src="images/J15.jpeg" alt="">
+                    <strong>Toyota RAV4 (hybrid). Black. New</strong>
+                    <small>2023</small>
+                    
+                </span>
+            </a>
+            
+            <a class="journey-stop owner-joint is-milestone"
+               href="cars/J16.html"
+               style="grid-column:27; grid-row:4;">
+                <span class="journey-dot">J16</span>
+                <span class="journey-preview">
+                    <img src="images/J16.jpeg" alt="">
+                    <strong>Renault Zoe ZE50</strong>
+                    <small>2024</small>
+                    <span class="journey-milestone-label">First fully electric car</span>
+                </span>
+            </a>
+            
+            <a class="journey-stop owner-joint"
+               href="cars/J17.html"
+               style="grid-column:28; grid-row:4;">
+                <span class="journey-dot">J17</span>
+                <span class="journey-preview">
+                    <img src="images/J17_3.jpeg" alt="">
+                    <strong>Renault 4 Techno Iconic</strong>
+                    <small>Year unknown</small>
+                    
+                </span>
+            </a>
+            
+                </div>
+            </div>
+        </section>
+    
+
+        
+    <section class="owner-section" data-owner-section="Steve">
+        <div class="section-heading">
+            <h2>Steve</h2>
+            <span>7 cars</span>
+        </div>
+        <div class="car-grid">
+            
+    <article class="car-card owner-steve" data-owner="Steve" data-fuel="Petrol" data-search="s1 steve ford escort mk1 bergundy petrol j reg ? 1981 second hand 1983 steve&#x27;s first ever car">
+        <a href="cars/S1.html">
+            <div class="card-image-wrap">
+                <img src="images/S1.jpg" alt="Ford Escort Mk1">
+                <span class="card-category">S1</span>
+                
+            </div>
+            <div class="card-body">
+                <div class="card-meta">
+                    <span>Steve</span>
+                    <span>1981</span>
+                </div>
+                <h3>Ford Escort Mk1</h3>
+                <div class="card-facts">
+                    <span>Bergundy</span>
+                    <strong class="registration-plate">J Reg</strong>
+                </div>
+                <div class="car-badges"><span class="car-badge">Second Hand</span><span class="car-badge">Petrol</span></div>
+            </div>
+        </a>
+    </article>
+    
+
+    <article class="car-card owner-steve" data-owner="Steve" data-fuel="Petrol" data-search="s2 steve ford escort mk1 yellow petrol ? ? 1983 second hand 1985 ">
+        <a href="cars/S2.html">
+            <div class="card-image-wrap">
+                <img src="images/S2.jpeg" alt="Ford Escort Mk1">
+                <span class="card-category">S2</span>
+                
+            </div>
+            <div class="card-body">
+                <div class="card-meta">
+                    <span>Steve</span>
+                    <span>1983</span>
+                </div>
+                <h3>Ford Escort Mk1</h3>
+                <div class="card-facts">
+                    <span>Yellow</span>
+                    <strong class="registration-plate">Unknown</strong>
+                </div>
+                <div class="car-badges"><span class="car-badge">Second Hand</span><span class="car-badge">Petrol</span></div>
+            </div>
+        </a>
+    </article>
+    
+
+    <article class="car-card owner-steve" data-owner="Steve" data-fuel="Petrol" data-search="s3 steve vw golf mk1 blue petrol ? ? 1985 second hand ? also first joint car">
+        <a href="cars/S3.html">
+            <div class="card-image-wrap">
+                <img src="images/S3.jpg" alt="VW Golf Mk1">
+                <span class="card-category">S3</span>
+                
+            </div>
+            <div class="card-body">
+                <div class="card-meta">
+                    <span>Steve</span>
+                    <span>1985</span>
+                </div>
+                <h3>VW Golf Mk1</h3>
+                <div class="card-facts">
+                    <span>Blue</span>
+                    <strong class="registration-plate">Unknown</strong>
+                </div>
+                <div class="car-badges"><span class="car-badge">Second Hand</span><span class="car-badge">Petrol</span></div>
+            </div>
+        </a>
+    </article>
+    
+
+    <article class="car-card owner-steve" data-owner="Steve" data-fuel="Petrol" data-search="s4 steve mazda mx3 turquoise petrol ? ? 1998 second hand ? 1.8-liter twin-cam v6">
+        <a href="cars/S4.html">
+            <div class="card-image-wrap">
+                <img src="images/S4.jpeg" alt="Mazda MX3">
+                <span class="card-category">S4</span>
+                
+            </div>
+            <div class="card-body">
+                <div class="card-meta">
+                    <span>Steve</span>
+                    <span>1998</span>
+                </div>
+                <h3>Mazda MX3</h3>
+                <div class="card-facts">
+                    <span>Turquoise</span>
+                    <strong class="registration-plate">Unknown</strong>
+                </div>
+                <div class="car-badges"><span class="car-badge">Second Hand</span><span class="car-badge">Petrol</span></div>
+            </div>
+        </a>
+    </article>
+    
+
+    <article class="car-card owner-steve" data-owner="Steve" data-fuel="Petrol" data-search="s5 steve vw golf mk 4 blue petrol ? ? 2009 second hand ? bought from north walsham">
+        <a href="cars/S5.html">
+            <div class="card-image-wrap">
+                <img src="images/placeholder.jpeg" alt="VW Golf Mk 4">
+                <span class="card-category">S5</span>
+                
+            </div>
+            <div class="card-body">
+                <div class="card-meta">
+                    <span>Steve</span>
+                    <span>2009</span>
+                </div>
+                <h3>VW Golf Mk 4</h3>
+                <div class="card-facts">
+                    <span>Blue</span>
+                    <strong class="registration-plate">Unknown</strong>
+                </div>
+                <div class="car-badges"><span class="car-badge">Second Hand</span><span class="car-badge">Petrol</span></div>
+            </div>
+        </a>
+    </article>
+    
+
+    <article class="car-card owner-steve" data-owner="Steve" data-fuel="Petrol" data-search="s6 steve vw t-roc grey petrol ap18 hvc 2018 2018 new ? ">
+        <a href="cars/S6.html">
+            <div class="card-image-wrap">
+                <img src="images/S6.jpeg" alt="VW T-roc">
+                <span class="card-category">S6</span>
+                
+            </div>
+            <div class="card-body">
+                <div class="card-meta">
+                    <span>Steve</span>
+                    <span>2018</span>
+                </div>
+                <h3>VW T-roc</h3>
+                <div class="card-facts">
+                    <span>Grey</span>
+                    <strong class="registration-plate">AP18 HVC</strong>
+                </div>
+                <div class="car-badges"><span class="car-badge">New</span><span class="car-badge">Petrol</span></div>
+            </div>
+        </a>
+    </article>
+    
+
+    <article class="car-card owner-steve" data-owner="Steve" data-fuel="Petrol" data-search="s7 steve honda jazz. vvti? grey petrol oe68 hpu ? 2022 second hand 2023 ">
+        <a href="cars/S7.html">
+            <div class="card-image-wrap">
+                <img src="images/S7.jpeg" alt="Honda Jazz. vvti?">
+                <span class="card-category">S7</span>
+                
+            </div>
+            <div class="card-body">
+                <div class="card-meta">
+                    <span>Steve</span>
+                    <span>2022</span>
+                </div>
+                <h3>Honda Jazz. vvti?</h3>
+                <div class="card-facts">
+                    <span>Grey</span>
+                    <strong class="registration-plate">OE68 HPU</strong>
+                </div>
+                <div class="car-badges"><span class="car-badge">Second Hand</span><span class="car-badge">Petrol</span></div>
+            </div>
+        </a>
+    </article>
+    
+        </div>
+    </section>
+    
+
+    <section class="owner-section" data-owner-section="Chris">
+        <div class="section-heading">
+            <h2>Christine</h2>
+            <span>3 cars</span>
+        </div>
+        <div class="car-grid">
+            
+    <article class="car-card owner-chris" data-owner="Chris" data-fuel="Petrol" data-search="c1 chris mini 1000 brown/orange petrol ? ? 1982 second hand ? chris&#x27; first ever car">
+        <a href="cars/C1.html">
+            <div class="card-image-wrap">
+                <img src="images/C1.jpg" alt="Mini 1000">
+                <span class="card-category">C1</span>
+                
+            </div>
+            <div class="card-body">
+                <div class="card-meta">
+                    <span>Christine</span>
+                    <span>1982</span>
+                </div>
+                <h3>Mini 1000</h3>
+                <div class="card-facts">
+                    <span>Brown/Orange</span>
+                    <strong class="registration-plate">Unknown</strong>
+                </div>
+                <div class="car-badges"><span class="car-badge">Second Hand</span><span class="car-badge">Petrol</span></div>
+            </div>
+        </a>
+    </article>
+    
+
+    <article class="car-card owner-chris" data-owner="Chris" data-fuel="Petrol" data-search="c2 chris fiat panda rust petrol ? ? 1984 second hand ? ">
+        <a href="cars/C2.html">
+            <div class="card-image-wrap">
+                <img src="images/C2.jpg" alt="Fiat Panda">
+                <span class="card-category">C2</span>
+                
+            </div>
+            <div class="card-body">
+                <div class="card-meta">
+                    <span>Christine</span>
+                    <span>1984</span>
+                </div>
+                <h3>Fiat Panda</h3>
+                <div class="card-facts">
+                    <span>Rust</span>
+                    <strong class="registration-plate">Unknown</strong>
+                </div>
+                <div class="car-badges"><span class="car-badge">Second Hand</span><span class="car-badge">Petrol</span></div>
+            </div>
+        </a>
+    </article>
+    
+
+    <article class="car-card owner-chris" data-owner="Chris" data-fuel="Petrol" data-search="c4 chris citroen zx estate burgundy petrol ? ? 1999 second hand ? first dog car">
+        <a href="cars/C4.html">
+            <div class="card-image-wrap">
+                <img src="images/C4.png" alt="Citroen ZX estate">
+                <span class="card-category">C4</span>
+                
+            </div>
+            <div class="card-body">
+                <div class="card-meta">
+                    <span>Christine</span>
+                    <span>1999</span>
+                </div>
+                <h3>Citroen ZX estate</h3>
+                <div class="card-facts">
+                    <span>Burgundy</span>
+                    <strong class="registration-plate">Unknown</strong>
+                </div>
+                <div class="car-badges"><span class="car-badge">Second Hand</span><span class="car-badge">Petrol</span></div>
+            </div>
+        </a>
+    </article>
+    
+        </div>
+    </section>
+    
+
+    <section class="owner-section" data-owner-section="Joint">
+        <div class="section-heading">
+            <h2>Joint</h2>
+            <span>17 cars</span>
+        </div>
+        <div class="car-grid">
+            
+    <article class="car-card owner-joint" data-owner="Joint" data-fuel="Petrol" data-search="j1 joint ford orion 1.6 ghia i gold petrol a644 phj ? 1987 second hand ? ">
+        <a href="cars/J1.html">
+            <div class="card-image-wrap">
+                <img src="images/J1.JPG" alt="Ford Orion 1.6 Ghia i">
+                <span class="card-category">J1</span>
+                <span class="card-photo-count">2 photos</span>
+            </div>
+            <div class="card-body">
+                <div class="card-meta">
+                    <span>Joint</span>
+                    <span>1987</span>
+                </div>
+                <h3>Ford Orion 1.6 Ghia i</h3>
+                <div class="card-facts">
+                    <span>Gold</span>
+                    <strong class="registration-plate">A644 PHJ</strong>
+                </div>
+                <div class="car-badges"><span class="car-badge">Second Hand</span><span class="car-badge">Petrol</span></div>
+            </div>
+        </a>
+    </article>
+    
+
+    <article class="car-card owner-joint" data-owner="Joint" data-fuel="Petrol" data-search="j2 joint vw golf 1.8gl mk 2 gold petrol ? ? 1990 second hand ? traded in to rodney, thanks rodney">
+        <a href="cars/J2.html">
+            <div class="card-image-wrap">
+                <img src="images/J2.jpg" alt="VW Golf 1.8GL Mk 2">
+                <span class="card-category">J2</span>
+                
+            </div>
+            <div class="card-body">
+                <div class="card-meta">
+                    <span>Joint</span>
+                    <span>1990</span>
+                </div>
+                <h3>VW Golf 1.8GL Mk 2</h3>
+                <div class="card-facts">
+                    <span>Gold</span>
+                    <strong class="registration-plate">Unknown</strong>
+                </div>
+                <div class="car-badges"><span class="car-badge">Second Hand</span><span class="car-badge">Petrol</span></div>
+            </div>
+        </a>
+    </article>
+    
+
+    <article class="car-card owner-joint" data-owner="Joint" data-fuel="Petrol" data-search="j3 joint ford escort mk 3 1.3l blue petrol g48 mex ? 1992 second hand ? from rodney">
+        <a href="cars/J3.html">
+            <div class="card-image-wrap">
+                <img src="images/J3.jpeg" alt="Ford Escort Mk 3 1.3L">
+                <span class="card-category">J3</span>
+                
+            </div>
+            <div class="card-body">
+                <div class="card-meta">
+                    <span>Joint</span>
+                    <span>1992</span>
+                </div>
+                <h3>Ford Escort Mk 3 1.3L</h3>
+                <div class="card-facts">
+                    <span>Blue</span>
+                    <strong class="registration-plate">G48 MEX</strong>
+                </div>
+                <div class="car-badges"><span class="car-badge">Second Hand</span><span class="car-badge">Petrol</span></div>
+            </div>
+        </a>
+    </article>
+    
+
+    <article class="car-card owner-joint" data-owner="Joint" data-fuel="Petrol" data-search="j4 joint opel cadet gls purple petrol b562 gam ? 1991 second hand ? handed back as dodgy paint job = dodgy car. lost deposit.">
+        <a href="cars/J4.html">
+            <div class="card-image-wrap">
+                <img src="images/J4.jpeg" alt="Opel Cadet GLS">
+                <span class="card-category">J4</span>
+                <span class="card-photo-count">2 photos</span>
+            </div>
+            <div class="card-body">
+                <div class="card-meta">
+                    <span>Joint</span>
+                    <span>1991</span>
+                </div>
+                <h3>Opel Cadet GLS</h3>
+                <div class="card-facts">
+                    <span>Purple</span>
+                    <strong class="registration-plate">B562 GAM</strong>
+                </div>
+                <div class="car-badges"><span class="car-badge">Second Hand</span><span class="car-badge">Petrol</span></div>
+            </div>
+        </a>
+    </article>
+    
+
+    <article class="car-card owner-joint" data-owner="Joint" data-fuel="Petrol" data-search="j5 joint triumph 1300 fwd blue/green petrol lsp 742g 1968 1992 second hand ? make do car to fill gap. named terence">
+        <a href="cars/J5.html">
+            <div class="card-image-wrap">
+                <img src="images/J5.jpeg" alt="Triumph 1300 FWD">
+                <span class="card-category">J5</span>
+                
+            </div>
+            <div class="card-body">
+                <div class="card-meta">
+                    <span>Joint</span>
+                    <span>1992</span>
+                </div>
+                <h3>Triumph 1300 FWD</h3>
+                <div class="card-facts">
+                    <span>Blue/Green</span>
+                    <strong class="registration-plate">LSP 742G</strong>
+                </div>
+                <div class="car-badges"><span class="car-badge">Second Hand</span><span class="car-badge">Petrol</span></div>
+            </div>
+        </a>
+    </article>
+    
+
+    <article class="car-card owner-joint" data-owner="Joint" data-fuel="Diesel" data-search="j6 joint citroen zx aura tdi silver diesel k171 jex ? 1992 new ? first ever new car. quick replacement for j4">
+        <a href="cars/J6.html">
+            <div class="card-image-wrap">
+                <img src="images/J6.jpeg" alt="Citroen ZX Aura TDi">
+                <span class="card-category">J6</span>
+                
+            </div>
+            <div class="card-body">
+                <div class="card-meta">
+                    <span>Joint</span>
+                    <span>1992</span>
+                </div>
+                <h3>Citroen ZX Aura TDi</h3>
+                <div class="card-facts">
+                    <span>Silver</span>
+                    <strong class="registration-plate">K171 JEX</strong>
+                </div>
+                <div class="car-badges"><span class="car-badge">New</span><span class="car-badge">Diesel</span></div>
+            </div>
+        </a>
+    </article>
+    
+
+    <article class="car-card owner-joint" data-owner="Joint" data-fuel="Petrol" data-search="j7 joint daihatsu sportrack convertable green petrol ? ? 1996 second hand ? first second car">
+        <a href="cars/J7.html">
+            <div class="card-image-wrap">
+                <img src="images/J7.JPG" alt="Daihatsu Sportrack Convertable">
+                <span class="card-category">J7</span>
+                
+            </div>
+            <div class="card-body">
+                <div class="card-meta">
+                    <span>Joint</span>
+                    <span>1996</span>
+                </div>
+                <h3>Daihatsu Sportrack Convertable</h3>
+                <div class="card-facts">
+                    <span>Green</span>
+                    <strong class="registration-plate">Unknown</strong>
+                </div>
+                <div class="car-badges"><span class="car-badge">Second Hand</span><span class="car-badge">Petrol</span></div>
+            </div>
+        </a>
+    </article>
+    
+
+    <article class="car-card owner-joint" data-owner="Joint" data-fuel="Petrol" data-search="j8 joint citroen zx volcane 1.3-door blue petrol m629 pkl ? 1994 new ? quick replacement for j6">
+        <a href="cars/J8.html">
+            <div class="card-image-wrap">
+                <img src="images/J8.jpg" alt="Citroen ZX Volcane 1.3-door">
+                <span class="card-category">J8</span>
+                
+            </div>
+            <div class="card-body">
+                <div class="card-meta">
+                    <span>Joint</span>
+                    <span>1994</span>
+                </div>
+                <h3>Citroen ZX Volcane 1.3-door</h3>
+                <div class="card-facts">
+                    <span>Blue</span>
+                    <strong class="registration-plate">M629 PKL</strong>
+                </div>
+                <div class="car-badges"><span class="car-badge">New</span><span class="car-badge">Petrol</span></div>
+            </div>
+        </a>
+    </article>
+    
+
+    <article class="car-card owner-joint" data-owner="Joint" data-fuel="Petrol" data-search="j9 joint mini cooper s 3-door red &amp; black petrol ao52 cea 2002 2002 new ? 162 bhp">
+        <a href="cars/J9.html">
+            <div class="card-image-wrap">
+                <img src="images/J9.jpeg" alt="Mini Cooper S 3-door">
+                <span class="card-category">J9</span>
+                
+            </div>
+            <div class="card-body">
+                <div class="card-meta">
+                    <span>Joint</span>
+                    <span>2002</span>
+                </div>
+                <h3>Mini Cooper S 3-door</h3>
+                <div class="card-facts">
+                    <span>Red &amp; Black</span>
+                    <strong class="registration-plate">AO52 CEA</strong>
+                </div>
+                <div class="car-badges"><span class="car-badge">New</span><span class="car-badge">Petrol</span></div>
+            </div>
+        </a>
+    </article>
+    
+
+    <article class="car-card owner-joint" data-owner="Joint" data-fuel="Petrol" data-search="j10 joint mini clubman. cream. new cream &amp; black petrol at57 ndg 2007 2007 new ? suicide door included!">
+        <a href="cars/J10.html">
+            <div class="card-image-wrap">
+                <img src="images/J10.jpeg" alt="Mini Clubman. Cream. New">
+                <span class="card-category">J10</span>
+                
+            </div>
+            <div class="card-body">
+                <div class="card-meta">
+                    <span>Joint</span>
+                    <span>2007</span>
+                </div>
+                <h3>Mini Clubman. Cream. New</h3>
+                <div class="card-facts">
+                    <span>Cream &amp; Black</span>
+                    <strong class="registration-plate">AT57 NDG</strong>
+                </div>
+                <div class="car-badges"><span class="car-badge">New</span><span class="car-badge">Petrol</span></div>
+            </div>
+        </a>
+    </article>
+    
+
+    <article class="car-card owner-joint" data-owner="Joint" data-fuel="Diesel" data-search="j11 joint vw golf estate mk ? grey diesel bl57 bmv 2007 2012 second hand ? ">
+        <a href="cars/J11.html">
+            <div class="card-image-wrap">
+                <img src="images/placeholder.jpeg" alt="VW golf estate Mk ?">
+                <span class="card-category">J11</span>
+                
+            </div>
+            <div class="card-body">
+                <div class="card-meta">
+                    <span>Joint</span>
+                    <span>2012</span>
+                </div>
+                <h3>VW golf estate Mk ?</h3>
+                <div class="card-facts">
+                    <span>Grey</span>
+                    <strong class="registration-plate">BL57 BMV</strong>
+                </div>
+                <div class="car-badges"><span class="car-badge">Second Hand</span><span class="car-badge">Diesel</span></div>
+            </div>
+        </a>
+    </article>
+    
+
+    <article class="car-card owner-joint" data-owner="Joint" data-fuel="Diesel" data-search="j12 joint vw golf estate mk ? alltrack red diesel ao66 vyr ? 2017 new ? only ever saw one other exactly the same at stiffkey">
+        <a href="cars/J12.html">
+            <div class="card-image-wrap">
+                <img src="images/J12.jpeg" alt="VW Golf estate Mk ? Alltrack">
+                <span class="card-category">J12</span>
+                
+            </div>
+            <div class="card-body">
+                <div class="card-meta">
+                    <span>Joint</span>
+                    <span>2017</span>
+                </div>
+                <h3>VW Golf estate Mk ? Alltrack</h3>
+                <div class="card-facts">
+                    <span>Red</span>
+                    <strong class="registration-plate">AO66 VYR</strong>
+                </div>
+                <div class="car-badges"><span class="car-badge">New</span><span class="car-badge">Diesel</span></div>
+            </div>
+        </a>
+    </article>
+    
+
+    <article class="car-card owner-joint" data-owner="Joint" data-fuel="Petrol" data-search="j13 joint vw touran mk ? grey petrol ao20 hbd 2020 2020 new ? ">
+        <a href="cars/J13.html">
+            <div class="card-image-wrap">
+                <img src="images/J13.jpeg" alt="VW Touran Mk ?">
+                <span class="card-category">J13</span>
+                
+            </div>
+            <div class="card-body">
+                <div class="card-meta">
+                    <span>Joint</span>
+                    <span>2020</span>
+                </div>
+                <h3>VW Touran Mk ?</h3>
+                <div class="card-facts">
+                    <span>Grey</span>
+                    <strong class="registration-plate">AO20 HBD</strong>
+                </div>
+                <div class="car-badges"><span class="car-badge">New</span><span class="car-badge">Petrol</span></div>
+            </div>
+        </a>
+    </article>
+    
+
+    <article class="car-card owner-joint" data-owner="Joint" data-fuel="Petrol Hybrid" data-search="j14 joint volvo v60 t6 estate hybrid silver petrol hybrid ao72 ttk 2022 2023 second hand 2023 first electric, plug-in hybrid">
+        <a href="cars/J14.html">
+            <div class="card-image-wrap">
+                <img src="images/J14.jpeg" alt="Volvo V60 T6 estate hybrid">
+                <span class="card-category">J14</span>
+                <span class="card-photo-count">2 photos</span>
+            </div>
+            <div class="card-body">
+                <div class="card-meta">
+                    <span>Joint</span>
+                    <span>2023</span>
+                </div>
+                <h3>Volvo V60 T6 estate hybrid</h3>
+                <div class="card-facts">
+                    <span>Silver</span>
+                    <strong class="registration-plate">AO72 TTk</strong>
+                </div>
+                <div class="car-badges"><span class="car-badge">Second Hand</span><span class="car-badge">Petrol Hybrid</span></div>
+            </div>
+        </a>
+    </article>
+    
+
+    <article class="car-card owner-joint" data-owner="Joint" data-fuel="Petrol Hybrid" data-search="j15 joint toyota rav4 (hybrid). black. new black petrol hybrid  2023 2023 new ? ">
+        <a href="cars/J15.html">
+            <div class="card-image-wrap">
+                <img src="images/J15.jpeg" alt="Toyota RAV4 (hybrid). Black. New">
+                <span class="card-category">J15</span>
+                <span class="card-photo-count">2 photos</span>
+            </div>
+            <div class="card-body">
+                <div class="card-meta">
+                    <span>Joint</span>
+                    <span>2023</span>
+                </div>
+                <h3>Toyota RAV4 (hybrid). Black. New</h3>
+                <div class="card-facts">
+                    <span>Black</span>
+                    <strong class="registration-plate">Unknown</strong>
+                </div>
+                <div class="car-badges"><span class="car-badge">New</span><span class="car-badge">Petrol Hybrid</span></div>
+            </div>
+        </a>
+    </article>
+    
+
+    <article class="car-card owner-joint" data-owner="Joint" data-fuel="Electric" data-search="j16 joint renault zoe ze50 white electric bp21 jzg ? 2024 second hand 2/3/26 first full electric">
+        <a href="cars/J16.html">
+            <div class="card-image-wrap">
+                <img src="images/J16.jpeg" alt="Renault Zoe ZE50">
+                <span class="card-category">J16</span>
+                
+            </div>
+            <div class="card-body">
+                <div class="card-meta">
+                    <span>Joint</span>
+                    <span>2024</span>
+                </div>
+                <h3>Renault Zoe ZE50</h3>
+                <div class="card-facts">
+                    <span>White</span>
+                    <strong class="registration-plate">BP21 JZG</strong>
+                </div>
+                <div class="car-badges"><span class="car-badge">Second Hand</span><span class="car-badge">Electric</span></div>
+            </div>
+        </a>
+    </article>
+    
+
+    <article class="car-card owner-joint" data-owner="Joint" data-fuel="Electric" data-search="j17 joint renault 4 techno iconic cloud blue electric  2026 2/3/26 new ? ">
+        <a href="cars/J17.html">
+            <div class="card-image-wrap">
+                <img src="images/J17_3.jpeg" alt="Renault 4 Techno Iconic">
+                <span class="card-category">J17</span>
+                
+            </div>
+            <div class="card-body">
+                <div class="card-meta">
+                    <span>Joint</span>
+                    <span>Year unknown</span>
+                </div>
+                <h3>Renault 4 Techno Iconic</h3>
+                <div class="card-facts">
+                    <span>Cloud Blue</span>
+                    <strong class="registration-plate">Unknown</strong>
+                </div>
+                <div class="car-badges"><span class="car-badge">New</span><span class="car-badge">Electric</span></div>
+            </div>
+        </a>
+    </article>
+    
+        </div>
+    </section>
+    
+    </main>
+    <script>
+        const searchInput = document.querySelector("#car-search");
+        const ownerFilter = document.querySelector("#owner-filter");
+        const fuelFilter = document.querySelector("#fuel-filter");
+        const resultCount = document.querySelector("#result-count");
+        const timelineOrder = document.querySelector("#timeline-order");
+        const timelineStrip = document.querySelector(".timeline-strip");
+        const cards = Array.from(document.querySelectorAll(".car-card"));
+        const ownerSections = Array.from(document.querySelectorAll(".owner-section"));
+        const timelineItems = Array.from(document.querySelectorAll(".timeline-item"));
+
+        function pluraliseCars(count) {
+            return count === 1 ? "1 car shown" : `${count} cars shown`;
+        }
+
+        function applyFilters() {
+            const query = searchInput.value.trim().toLowerCase();
+            const owner = ownerFilter.value;
+            const fuel = fuelFilter.value;
+            let visibleCount = 0;
+
+            cards.forEach((card) => {
+                const matchesSearch = !query || card.dataset.search.includes(query);
+                const matchesOwner = !owner || card.dataset.owner === owner;
+                const matchesFuel = !fuel || card.dataset.fuel === fuel;
+                const isVisible = matchesSearch && matchesOwner && matchesFuel;
+
+                card.hidden = !isVisible;
+                if (isVisible) visibleCount += 1;
+            });
+
+            ownerSections.forEach((section) => {
+                const hasVisibleCards = Array.from(section.querySelectorAll(".car-card")).some((card) => !card.hidden);
+                section.hidden = !hasVisibleCards;
+            });
+
+            resultCount.value = pluraliseCars(visibleCount);
+        }
+
+        [searchInput, ownerFilter, fuelFilter].forEach((control) => {
+            control.addEventListener("input", applyFilters);
+        });
+
+        timelineOrder.addEventListener("change", () => {
+            const orderedItems = timelineOrder.value === "latest"
+                ? [...timelineItems].reverse()
+                : timelineItems;
+
+            orderedItems.forEach((item) => timelineStrip.appendChild(item));
+            timelineStrip.scrollLeft = 0;
+        });
+    </script>
+</body>
+</html>
